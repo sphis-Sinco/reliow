@@ -24,5 +24,23 @@ export const JSONS = [
         "speculation": false,
         "png_file_location":"dogman.jpeg",
         "source": "https://en.wikipedia.org/wiki/Dog_Man_%28film%29"
+    },
+    {
+        "title":"Marked Men: Rule + Shaw",
+        "movie": true,
+        "release_date":"January 22nd 2025",
+        "place":"the united states",
+        "speculation": false,
+        "png_file_location":"markedmenruleshaw.jpeg",
+        "source": "https://en.wikipedia.org/wiki/Marked_Men:_Rule_%2B_Shaw"
+    },
+    {
+        "title":"Screamboat",
+        "movie": true,
+        "release_date":"April 2025",
+        "place":"the united states",
+        "speculation": false,
+        "png_file_location":"screanboat.jpeg",
+        "source": "https://en.wikipedia.org/wiki/Screamboat"
     }
 ]
