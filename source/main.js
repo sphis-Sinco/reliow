@@ -34,11 +34,11 @@ carddivlink.innerHTML = "Source";
   carddiveheader.innerHTML = thejson[i].title;
   carddivpara.innerHTML = thejson[i].release_date + ' ('+(thejson[i].speculation == true ? 'SPECULATED' : 'OFFICIAL')+' RELEASE IN '+thejson[i].place.toUpperCase()+')';
   carddivlink.href = thejson[i].source;
-  if (thejson[i].source != null) divcarddiv.appendChild(carddivlink);
       
   divcard.appendChild(divcardimg);
   divcarddiv.appendChild(carddiveheader);
   divcarddiv.appendChild(carddivpara);
+  if (thejson[i].source != null) divcarddiv.appendChild(carddivlink);
   divcard.appendChild(divcarddiv);
 
     if (ismovie) {
