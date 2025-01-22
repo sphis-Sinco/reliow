@@ -13,8 +13,7 @@ divcard.style = "width: 18rem;";
 var i = 0;
 for (i in thejson) {
 
-    var ismovie = thejson[i].type.toLowerCase() == 'movie';
-
+    var ismovie = thejson[i].movie;
 
   var divcarddiv = document.createElement('div');
   divcarddiv.class = "card-body";
