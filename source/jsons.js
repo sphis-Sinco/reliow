@@ -20,7 +20,7 @@ export const JSONS = [
         "title":"Dog man",
         "type": "MOVIE",
         "release_date":"January 31st 2025",
-        "place":"Unknown location",
+        "place":"the united states",
         "speculation": false,
         "png_file_location":"dogman.jpeg",
         "source": "https://en.wikipedia.org/wiki/Dog_Man_%28film%29"
