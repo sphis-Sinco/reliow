@@ -9,7 +9,7 @@ var i = 0
 for (i in thejson) {
     var p = document.createElement("p");
     
-    p.innerHTML = thejson[i].title + ' - ' + thejson[i].release_date;
+    p.innerHTML = thejson[i].title + ' - ' + thejson[i].release_date + (thejson[i].speculation == true ? ' (SPECULATION)' : ' (OFFICIAL)');
 
     if (thejson[i].type.toLowerCase() == 'movie')
         moviesbody.appendChild(p);
