@@ -1,7 +1,6 @@
-import { getJSON } from "./util/readFile.js";
+import { JSONS } from "./jsons.js";
 
-var thejson = getJSON("sonic4");
-
+var thejson = JSONS
 var p = document.createElement("p");
-p.innerHTML = thejson;
+p.innerHTML = thejson[0].title;
 document.body.appendChild(p)
