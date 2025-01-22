@@ -2,7 +2,7 @@ export const JSONS = [
     {
         "title":"Sonic the Hedgehog 4",
         "type": "MOVIE",
-        "release_date":"March 19 2027",
+        "release_date":"March 19th 2027",
         "place":"Unknown location",
         "speculation": false,
         "png_file_location":"sonic 4.jpeg"
@@ -13,6 +13,14 @@ export const JSONS = [
         "release_date":"2025",
         "place":"Unknown location",
         "speculation": true,
-        "png_file_location":""
+        "png_file_location":"mario 2"
+    },
+    {
+        "title":"Dog man",
+        "type": "MOVIE",
+        "release_date":"January 31st 2025",
+        "place":"Unknown location",
+        "speculation": false,
+        "png_file_location":"dogman.jpeg"
     }
 ]
