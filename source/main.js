@@ -12,7 +12,7 @@ for (i in thejson) {
 
     var ismovie = thejson[i].type.toLowerCase() == 'movie';
     
-    p.innerHTML = thejson[i].title + ' - ' + thejson[i].release_date + (thejson[i].speculation == true ? ' (SPECULATION)' : ' (OFFICIAL)');
+    p.innerHTML = thejson[i].title + ' - ' + thejson[i].release_date + ' ('+(thejson[i].speculation == true ? 'SPECULATED' : 'OFFICIAL')+' RELEASE IN '+thejson[i].place.toUpperCase()+')';
     img.src = 'assets/pngs/'+(ismovie ? 'movies' : 'shows')+'/'+thejson[i].png_file_location
     img.width = 100;
 
