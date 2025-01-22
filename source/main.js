@@ -9,32 +9,37 @@ var showsbody = document.getElementById("shows");
 var divcard = document.createElement('div');
 divcard.className = 'card';
 divcard.style = "width: 18rem;";
-var divcardimg = document.createElement('img');
-divcardimg.className = "card-img-top"
-divcard.appendChild(divcardimg);
-var divcarddiv = document.createElement('div');
-divcarddiv.class = "card-body";
-var carddiveheader = document.createElement('h5');
-carddiveheader.class = "card-title";
-divcarddiv.appendChild(carddiveheader);
-var carddivpara = document.createElement('p');
-carddivpara.className = "card-text";
-divcarddiv.appendChild(carddivpara);
-var carddivlink = document.createElement('a');
-carddivlink.class = "btn btn-primary";
-carddivlink.innerHTML = "Source";
-divcard.appendChild(divcarddiv);
 
 var i = 0;
 for (i in thejson) {
 
     var ismovie = thejson[i].type.toLowerCase() == 'movie';
 
-    divcardimg.src = 'assets/pngs/'+(ismovie ? 'movies' : 'shows')+'/'+thejson[i].png_file_location;
-    carddiveheader.innerHTML = thejson[i].title;
-    carddivpara.innerHTML = thejson[i].release_date + ' ('+(thejson[i].speculation == true ? 'SPECULATED' : 'OFFICIAL')+' RELEASE IN '+thejson[i].place.toUpperCase()+')';
-    carddivlink.href = thejson[i].source;
-    if (thejson[i].source != null) divcarddiv.appendChild(carddivlink);
+
+  var divcarddiv = document.createElement('div');
+  divcarddiv.class = "card-body";
+
+
+var divcardimg = document.createElement('img');
+divcardimg.className = "card-img-top";
+var carddiveheader = document.createElement('h5');
+carddiveheader.class = "card-title";
+var carddivpara = document.createElement('p');
+carddivpara.className = "card-text";
+var carddivlink = document.createElement('a');
+carddivlink.class = "btn btn-primary";
+carddivlink.innerHTML = "Source";
+
+  divcardimg.src = 'assets/pngs/'+(ismovie ? 'movies' : 'shows')+'/'+thejson[i].png_file_location;
+  carddiveheader.innerHTML = thejson[i].title;
+  carddivpara.innerHTML = thejson[i].release_date + ' ('+(thejson[i].speculation == true ? 'SPECULATED' : 'OFFICIAL')+' RELEASE IN '+thejson[i].place.toUpperCase()+')';
+  carddivlink.href = thejson[i].source;
+  if (thejson[i].source != null) divcarddiv.appendChild(carddivlink);
+      
+  divcard.appendChild(divcardimg);
+  divcarddiv.appendChild(carddiveheader);
+  divcarddiv.appendChild(carddivpara);
+  divcard.appendChild(divcarddiv);
 
     if (ismovie) {
         moviesbody.appendChild(divcard);
